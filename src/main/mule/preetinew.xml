@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="preetinewFlow" doc:id="b7d510c0-8bdc-4323-b127-f76805fb6ca0" >
 		<http:listener doc:name="Listener" doc:id="e7dfd1e0-ca4f-485a-871a-5b60f854f2d9" config-ref="HTTP_Listener_config" path="/hello"/>
 		<set-payload value="Hello world" doc:name="Set Payload" doc:id="7b061eee-1132-4297-9683-48d441c3df60" />
+		<logger level="INFO" doc:name="Logger" doc:id="3abf19c0-8cc5-43bd-9884-edfc98e6279e" message="completed"/>
 	</flow>
 </mule>
